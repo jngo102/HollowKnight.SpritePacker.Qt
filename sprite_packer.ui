@@ -15,7 +15,7 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="2">
+    <item row="0" column="1">
      <layout class="QGridLayout" name="gridContainer" rowstretch="3,0,0,0,0,0,0,0" columnstretch="0,0,0,0,0,0,0,0,0,0">
       <property name="sizeConstraint">
        <enum>QLayout::SetDefaultConstraint</enum>
@@ -78,23 +78,6 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="3" colspan="3">
-       <widget class="QComboBox" name="jsonVersionComboBox">
-        <property name="editable">
-         <bool>false</bool>
-        </property>
-        <item>
-         <property name="text">
-          <string>1.4.3.2</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>1.2.2.1</string>
-         </property>
-        </item>
-       </widget>
-      </item>
       <item row="4" column="3" alignment="Qt::AlignHCenter">
        <widget class="QLabel" name="originalAtlasLabel">
         <property name="text">
@@ -103,7 +86,7 @@
        </widget>
       </item>
       <item row="7" column="3">
-       <widget class="QComboBox" name="comboBox">
+       <widget class="QComboBox" name="languageComboBox">
         <item>
          <property name="text">
           <string>zh-CN</string>
@@ -342,6 +325,23 @@
         <property name="text">
          <string>Join and Draw!</string>
         </property>
+       </widget>
+      </item>
+      <item row="1" column="3" colspan="3">
+       <widget class="QComboBox" name="jsonVersionComboBox">
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>1.4.3.2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1.2.2.1</string>
+         </property>
+        </item>
        </widget>
       </item>
      </layout>

@@ -10,8 +10,8 @@ struct Collection
 {
 	Collection();
 	Collection(QString _name, QString infoPath);
-	static Collection* getCollectionByName(QString _name);
-	static Collection* getGenCollectionByName(QString _name);
+    static Collection getCollectionByName(QString _name);
+    static Collection getGenCollectionByName(QString _name);
 	void sortFrames();
 
 	QString						name;
@@ -19,7 +19,7 @@ struct Collection
 	QList<Frame>*				frames;
 
 	static QList<Collection>* collections;
-	static QList<Collection>* genCollections;
+    static QList<Collection>* genCollections;
 };
 
 struct Frame
@@ -29,9 +29,9 @@ public:
 	Frame(QString filePath, SpriteInfo* _spriteInfo);
 
 	QFile*						file;
-	SpriteInfo*					spriteInfo;
+    SpriteInfo*					spriteInfo;
 	Sprite*						sprite;
-	Collection*					collection;
+    Collection					collection;
 private:
 	Sprite						getSprite(QFile* _file, SpriteInfo *_spriteInfo);
 };

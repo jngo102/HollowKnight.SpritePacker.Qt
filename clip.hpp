@@ -64,8 +64,8 @@ private:
         QJsonDocument loadedJson(QJsonDocument::fromJson(jsonDocument));
         QJsonObject json(loadedJson.object());
 
-        float fps = json.value("animInfo").toObject().value("fps").toDouble();
-        int loopStart = json.value("animInfo").toObject().value("loopStart").toInt();
+        float fps = json.value("fps").toDouble();
+        int loopStart = json.value("loopStart").toInt();
 		return qMakePair(fps, loopStart);
 	}
 };

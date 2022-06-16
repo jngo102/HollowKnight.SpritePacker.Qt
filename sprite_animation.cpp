@@ -1,5 +1,6 @@
 #include "stdafx.hpp"
 #include "sprite_animation.hpp"
+#include "logger.hpp"
 
 SpriteAnimation::SpriteAnimation(QObject* parent) : QObject(parent)
 {
@@ -36,7 +37,7 @@ bool SpriteAnimation::isEmpty()
 
 void SpriteAnimation::play(int fromFrame)
 {
-	changeFrame(fromFrame);
+    changeFrame(fromFrame);
 	frameTimer->start(1000 / fps);
 }
 

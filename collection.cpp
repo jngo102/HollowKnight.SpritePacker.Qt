@@ -7,7 +7,7 @@ QList<Collection>* Collection::genCollections = new QList<Collection>();
 
 Collection::Collection()
 {
-	name = "Collection";
+    name = "";
 	file = new QFile();
 	frames = new QList<Frame>();
 }
@@ -19,28 +19,28 @@ Collection::Collection(QString _name, QString infoPath)
 	frames = new QList<Frame>();
 }
 
-Collection* Collection::getCollectionByName(QString _name)
+Collection Collection::getCollectionByName(QString _name)
 {
-	for (Collection collection : *collections)
-	{
-		if (collection.name == _name)
+    for (Collection _collection : *collections)
+    {
+        if (_collection.name == _name)
 		{
-			return &collection;
+            return _collection;
 		}
 	}
-	return nullptr;
+    return *new Collection();
 }
 
-Collection* Collection::getGenCollectionByName(QString _name)
+Collection Collection::getGenCollectionByName(QString _name)
 {
-	for (Collection collection : *genCollections)
+    for (Collection _genCollection : *genCollections)
 	{
-		if (collection.name == _name)
+        if (_genCollection.name == _name)
 		{
-            return &collection;
+            return _genCollection;
 		}
 	}
-	return nullptr;
+    return *new Collection();
 }
 
 bool frameLessThan(const Frame& frameA, const Frame& frameB)
@@ -58,8 +58,8 @@ Frame::Frame()
 	file = new QFile();
 	spriteInfo = new SpriteInfo();
 	sprite = new Sprite();
-	collection = new Collection();
-	collection->frames->push_back(*this);
+    collection = *new Collection();
+    collection.frames->push_back(*this);
 }
 
 Frame::Frame(const QString filePath, SpriteInfo* _spriteInfo)
@@ -68,9 +68,9 @@ Frame::Frame(const QString filePath, SpriteInfo* _spriteInfo)
 	spriteInfo = _spriteInfo;
 	sprite = new Sprite();
 	*sprite = getSprite(file, _spriteInfo);
-	if (sprite->id == 0) return;
-	collection = Collection::getCollectionByName(sprite->collectionName + ".png");
-	collection->frames->push_back(*this);
+    if (sprite->id == 0) return;
+    collection = Collection::getCollectionByName(sprite->collectionName + ".png");
+    collection.frames->push_back(*this);
 }
 
 Sprite Frame::getSprite(QFile* _file, SpriteInfo* _spriteInfo)

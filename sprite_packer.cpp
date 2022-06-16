@@ -119,8 +119,8 @@ void SpritePacker::loadFrames(QListWidgetItem* item)
     QByteArray jsonDocument = jsonFile.readAll();
     QJsonDocument loadedJson(QJsonDocument::fromJson(jsonDocument));
     QJsonObject json(loadedJson.object());
-    float fps = json.value("animInfo").toObject().value("fps").toDouble();
-    int loopStart = json.value("animInfo").toObject().value("loopStart").toInt();
+    float fps = json.value("fps").toDouble();
+    int loopStart = json.value("loopStart").toInt();
 
     currentAnimation->init(fps, pixmaps, loopStart);
     currentAnimation->play();
@@ -161,7 +161,7 @@ void SpritePacker::on_framesFilter_textChanged(const QString&)
     loadFrames(ui.clipsList->item(0));
 }
 
-void SpritePacker::on_jsonVersionComboBox_activated(const QString& _jsonVersion)
+void SpritePacker::on_jsonVersionComboBox_activated(const QString &_jsonVersion)
 {
     jsonVersion = _jsonVersion;
 }

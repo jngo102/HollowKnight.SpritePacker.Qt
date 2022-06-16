@@ -29,127 +29,127 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="88"/>
+        <location filename="sprite_packer.ui" line="337"/>
         <source>1.4.3.2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="93"/>
+        <location filename="sprite_packer.ui" line="342"/>
         <source>1.2.2.1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="101"/>
+        <location filename="sprite_packer.ui" line="84"/>
         <source>Original Atlas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="109"/>
+        <location filename="sprite_packer.ui" line="92"/>
         <source>zh-CN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="114"/>
+        <location filename="sprite_packer.ui" line="97"/>
         <source>en-US</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="122"/>
+        <location filename="sprite_packer.ui" line="105"/>
         <source>Restore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="132"/>
+        <location filename="sprite_packer.ui" line="115"/>
         <source>Changed Files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="139"/>
+        <location filename="sprite_packer.ui" line="122"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="152"/>
+        <location filename="sprite_packer.ui" line="135"/>
         <source>Inspector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="168"/>
+        <location filename="sprite_packer.ui" line="151"/>
         <source>Animations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="178"/>
+        <location filename="sprite_packer.ui" line="161"/>
         <source>Replace All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="185"/>
+        <location filename="sprite_packer.ui" line="168"/>
         <source>Filter Clips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="192"/>
+        <location filename="sprite_packer.ui" line="175"/>
         <source>Add</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="199"/>
+        <location filename="sprite_packer.ui" line="182"/>
         <source>Sort</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="215"/>
+        <location filename="sprite_packer.ui" line="198"/>
         <source>Frames</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="225"/>
+        <location filename="sprite_packer.ui" line="208"/>
         <source>Backup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="235"/>
+        <location filename="sprite_packer.ui" line="218"/>
         <source>Pack</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="245"/>
+        <location filename="sprite_packer.ui" line="228"/>
         <source>Replace</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="255"/>
+        <location filename="sprite_packer.ui" line="238"/>
         <source>Language</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="262"/>
+        <location filename="sprite_packer.ui" line="245"/>
         <source>Backup Files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="269"/>
+        <location filename="sprite_packer.ui" line="252"/>
         <source>Unwatch</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="310"/>
+        <location filename="sprite_packer.ui" line="293"/>
         <source>Check</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="317"/>
+        <location filename="sprite_packer.ui" line="300"/>
         <source>&lt;a href=&quot;https://github.com/magegihk/HollowKnight.GODump&quot;&gt;Get single sprites&lt;/a&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="330"/>
+        <location filename="sprite_packer.ui" line="313"/>
         <source>&lt;a href=&quot;https://github.com/magegihk/HollowKnight.SpritePacker&quot;&gt;About Sprite Packer&lt;/a&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sprite_packer.ui" line="343"/>
+        <location filename="sprite_packer.ui" line="326"/>
         <source>Join and Draw!</source>
         <translation type="unfinished"></translation>
     </message>

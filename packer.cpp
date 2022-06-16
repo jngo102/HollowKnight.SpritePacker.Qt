@@ -21,12 +21,19 @@ void Packer::pack(Collection collection)
 		{
             for (int j = 0; j < image.height(); j++)
 			{
-                int x = frame.sprite->flipped ? frame.sprite->x + j - frame.sprite->yr : frame.sprite->x + i - frame.sprite->xr;
-                int y = frame.sprite->flipped ? genAtlas.height() - (frame.sprite->y + i) - 1 + frame.sprite->xr : genAtlas.height() - (frame.sprite->y + j) - 1 + frame.sprite->yr;
-				if ((i >= frame.sprite->xr && i < frame.sprite->xr + frame.sprite->width && j >= frame.sprite->yr && j < frame.sprite->yr + frame.sprite->height) && (x >= 0 && x < genAtlas.width() && y >= 0 && y < genAtlas.height()))
-				{
-                    genAtlas.setPixelColor(x, y, image.pixelColor(i, image.height() - j - 1));
-				}
+                if (SpritePacker::jsonVersion == "1.4.3.2")
+                {
+                    int x = frame.sprite->flipped ? frame.sprite->x + j - frame.sprite->yr : frame.sprite->x + i - frame.sprite->xr;
+                    int y = frame.sprite->flipped ? genAtlas.height() - (frame.sprite->y + i) - 1 + frame.sprite->xr : genAtlas.height() - (frame.sprite->y + j) - 1 + frame.sprite->yr;
+                    if ((i >= frame.sprite->xr && i < frame.sprite->xr + frame.sprite->width && j >= frame.sprite->yr && j < frame.sprite->yr + frame.sprite->height) && (x >= 0 && x < genAtlas.width() && y >= 0 && y < genAtlas.height()))
+                    {
+                        genAtlas.setPixelColor(x, y, image.pixelColor(i, image.height() - j - 1));
+                    }
+                }
+                else if (SpritePacker::jsonVersion == "1.2.2.1")
+                {
+
+                }
 			}
         }
 	}

@@ -7,6 +7,7 @@
 #include "sprite_animation.hpp"
 #include "sprites_folder.hpp"
 
+
 enum InspectMode
 {
     animation,
@@ -34,12 +35,13 @@ private slots:
     void                            updateFrameList(int frameNumber);
     void                            updatePixmap(QPixmap* pixmap);
 
-    void                            on_animationsFilter_textChanged(const QString &arg1);
-    void                            on_clipsFilter_textChanged(const QString &arg1);
-    void                            on_framesFilter_textChanged(const QString &arg1);
-    void                            on_jsonVersionComboBox_activated(const QString &arg1);
+    void                            on_animationsFilter_textChanged(const QString&);
+    void                            on_clipsFilter_textChanged(const QString&);
+    void                            on_framesFilter_textChanged(const QString&);
+    void                            on_jsonVersionComboBox_activated(const QString &_jsonVersion);
     void                            on_packButton_clicked();
     void                            on_refreshButton_clicked();
+
 private:
     QString                         getAnimation();
     QString                         getClip();

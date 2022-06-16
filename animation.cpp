@@ -41,7 +41,7 @@ Animation::Animation(QDir* _dir)
                 json.value("scollectionname").toArray().at(i).toString(),
                 json.value("spath").toArray().at(i).toString(),
                 SpritePacker::jsonVersion == "1.2.2.1" ?
-                        (json.value("sfilpped").toArray().at(i).toInt() == 1 ? true : false) :
+                        json.value("sfilpped").toArray().at(i).toInt() == 1 :
                         json.value("sfilpped").toArray().at(i).toBool());
 		}
 	}
@@ -65,7 +65,7 @@ QList<Clip>* Animation::findAllClips(QDir* _dir, SpriteInfo* _spriteInfo)
 				QFile atlas(clipDir.absoluteFilePath(atlasName));
 				if (!atlas.fileName().startsWith("Gen-"))
 				{
-					if (Collection::getCollectionByName(atlas.fileName()) == nullptr)
+                    if (Collection::getCollectionByName(atlas.fileName()).name.isEmpty())
 					{
 						QString collectionName = atlas.fileName().split("/").last();
 						Collection newCollection(collectionName, atlas.fileName());
@@ -74,7 +74,7 @@ QList<Clip>* Animation::findAllClips(QDir* _dir, SpriteInfo* _spriteInfo)
 				}
 				else if (atlas.fileName().startsWith("Gen-"))
 				{
-					if (Collection::getGenCollectionByName(atlas.fileName()) == nullptr)
+                    if (Collection::getGenCollectionByName(atlas.fileName()).name.isEmpty())
 					{
 						QString collectionName = atlas.fileName().split("/").last();
 						Collection newCollection(collectionName, atlas.fileName());

@@ -24,7 +24,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #    endif()
 #endif()
 
-find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets LinguistTools REQUIRED)
+find_package(QT NAMES Qt6 COMPONENTS Widgets LinguistTools REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets LinguistTools REQUIRED)
 
 set(TS_FILES SpritePacker_zh_CN.ts)
@@ -74,3 +74,4 @@ else()
 endif()
 
 target_link_libraries(SpritePacker PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_precompile_headers(SpritePacker PRIVATE stdafx.hpp)
